@@ -9,8 +9,6 @@ upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 numbers = '0123456789'
 special = '!@#$%^&*?'
 
-#requirement = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*?'
-
 password = input("Enter a password: " )
 
 def check_password(password):
@@ -18,16 +16,16 @@ def check_password(password):
     up = 0
     nums = 0
     spec = 0
-    for p in password:
-        if p in lower:
+    for passwd in password:
+        if passwd in lower:
             low += 1
-        elif p in upper:
+        elif passwd in upper:
             up += 1
-        elif p in numbers:
+        elif passwd in numbers:
             nums += 1
-        elif p in special:
+        elif passwd in special:
             spec += 1
-    return f"{low} lowercase, {up} uppercase, {nums} number(s), {spec} special character(s)"
+    return f"Your password has the following characteristics:\n{low} lowercase, {up} uppercase, {nums} number(s), {spec} special character(s)"
     
 
 print(check_password(password))
