@@ -16,10 +16,10 @@ def getMobileNumber():
         count += 1
         number += random_num
     
+    time.sleep(1)
     return f"Formatted: {number[0:3]}{delim}{number[3:6]}{delim}{number[6:]}", "Non-Formatted:", number            
 
     
-print(getMobileNumber())
 
 # Ask user for the number of mobile numbers to be generated
 ask = int(input("How many mobile numbers would you like generated?: "))
