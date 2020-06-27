@@ -9,30 +9,28 @@ upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 numbers = '0123456789'
 special = '!@#$%^&*?'
 
-#requirement = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*?'
-
-# Checks the user's password and display information about it
+# Checks the user's password and displays information about it
 def check_password(password):
     low = 0
     up = 0
     nums = 0
     spec = 0
-    for p in password:
-        if p in lower:
+    for passwd in password:
+        if passwd in lower:
             low += 1
-        elif p in upper:
+        elif passwd in upper:
             up += 1
-        elif p in numbers:
+        elif passwd in numbers:
             nums += 1
-        elif p in special:
+        elif passwd in special:
             spec += 1
-    return f"{low} lowercase, {up} uppercase, {nums} number(s), {spec} special character(s)"
+    return f"Your password has the following characteristics:\n{low} lowercase, {up} uppercase, {nums} number(s), {spec} special character(s)"
 
-# Generates a password specified for the length entered 
+# Generates a password for the length entered 
 def gen_password(length):
     result = ''
     for l in range(length):
-        password = random.choice(lower+upper+numbers)
+        password = random.choice(lower+upper+numbers+special)
         result += password
     return result
 
