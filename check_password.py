@@ -25,6 +25,9 @@ def check_password(password):
             nums += 1
         elif passwd in special:
             spec += 1
+        else:
+            return "Password does not meet requirements or normal convention"
+    
     return f"Your password has the following characteristics:\n{low} lowercase, {up} uppercase, {nums} number(s), {spec} special character(s)"
     
 
