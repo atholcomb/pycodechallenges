@@ -4,8 +4,8 @@
 
 def numInStr(string_list):
     nums = '1234567890'
-
     result = set()
+    
     for num in nums:
         for list_item in string_list:
             if num in list_item:
