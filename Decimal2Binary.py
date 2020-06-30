@@ -16,7 +16,7 @@ def Decimal2Binary(n):
         else:
             break
 
-    return f"// {orignal_n} = {value[::-1]}"
+    return f"{orignal_n} = {value[::-1]} in binary"
     
 
 print(Decimal2Binary(10))
