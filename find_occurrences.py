@@ -4,8 +4,7 @@
 
 def findOccurrences(string, key):
     result = dict()
-    count = 0
-
+    
     string = string.lower()
     key = key.lower()
     string = string.split() # seperate the word from the sentence into a list
