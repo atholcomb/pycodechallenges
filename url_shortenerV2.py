@@ -7,8 +7,8 @@ import random
 base_url = "https://bit.ly/"
 
 def shortenUrl(url):
-
     link = ""
+    
     for r in range(8):
         chars = random.choice("1234567890abcdefghijklmnopqrstuvwxyz")
         link += chars
