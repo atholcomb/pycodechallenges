@@ -1,6 +1,7 @@
 #!/usr/bin/python3.7
 # written by: atholcomb
 # return_string.py
+# return a string when given a list of strings
 
 def return_string(list):
     result = ''
