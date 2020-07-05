@@ -5,7 +5,6 @@
 
 def letter_before(string):
     original_string = string
-    result = ''
     temp = 0 # store letter unicode integer value to decrement in for loop
 
     for letter in string:
