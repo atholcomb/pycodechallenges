@@ -4,7 +4,6 @@
 # Create a function that returns the number of characters shared between two words
 
 def shared_letters(string1, string2):
-    letters = 'abcdefghijklmnopqrstuvwxyz'
     result = 0
 
     for s1 in string1:
