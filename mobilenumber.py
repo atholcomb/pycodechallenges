@@ -9,7 +9,6 @@ def getMobileNumber():
     count = 0
     delim = '-'
     number = ""
-    
 
     while count < 10: 
         random_num = random.choice('0123456789')
@@ -19,7 +18,6 @@ def getMobileNumber():
     time.sleep(1)
     return f"Formatted: {number[0:3]}{delim}{number[3:6]}{delim}{number[6:]}", "Non-Formatted:", number            
 
-    
 
 # Ask user for the number of mobile numbers to be generated
 ask = int(input("How many mobile numbers would you like generated?: "))
