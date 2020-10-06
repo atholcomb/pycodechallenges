@@ -38,9 +38,9 @@ def is_harshad(num):
     return False
     
 
-print(is_harshad(75))
-print(is_harshad(171))
-print(is_harshad(481))
-print(is_harshad(89))
-print(is_harshad(516))
-print(is_harshad(200))
+print(is_harshad(75))   # False
+print(is_harshad(171))  # True
+print(is_harshad(481))  # True
+print(is_harshad(89))   # False
+print(is_harshad(516))  # True
+print(is_harshad(200))  # True
