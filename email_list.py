@@ -4,9 +4,9 @@
 
 def email_list(domains):
     emails = []
-    for users, addrs in domains.items():
-        for a in addrs:
-            emails.append(a+'@'+users)
+    for domains, users in domains.items():
+        for user in users:
+            emails.append(user+'@'+domains)
     return emails
     
 
