@@ -21,4 +21,3 @@ print(convert_to_acronym("Asynchronous Javascript and XML"))
 print(convert_to_acronym("GNU Image Manipulation Program"))
 print(convert_to_acronym("Complementary metal-oxide semiconductor"))
 print(convert_to_acronym("Something - I made up from thin air"))
-
