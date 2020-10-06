@@ -1,6 +1,8 @@
 #!/usr/bin/python3.7
 # written by: atholcomb
 # email_list.py
+# For each user in list, print out user with respective domain attached
+# ['clark.kent@gmail.com', 'diana.prince@gmail.com', 'peter.parker@gmail.com', 'barbara.gordon@yahoo.com', 'jean.grey@yahoo.com', 'bruce.wayne@hotmail.com']
 
 def email_list(domains):
     emails = []
