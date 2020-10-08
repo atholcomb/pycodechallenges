@@ -12,7 +12,7 @@ def square_patch(patch_value):
         return "[]"
     else:
         for pv in range(patch_value):
-            patch_list.append(patch_value * 1)
+            patch_list.append(patch_value)
 
             
     return f"{patch_list}\n" * patch_value 
