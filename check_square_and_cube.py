@@ -6,15 +6,15 @@
 
 import math
 
-def check_square_and_cube(lst):
+def check_square_and_cube(s_c_list):
+    for number in s_c_list:
+        square = int(math.sqrt(number))
+        cube = math.ceil(number ** (1/3))
+        if square == cube:
+            return f'square: {square}, cube: {cube} -> True'
+        return f'square: {square}, cube: {cube} -> False'
 
-    square = math.sqrt(lst[0])
-    cube = lst[1] ** (1./3.)
 
-    if square == cube:
-        return True
-    return False
-
-print(check_square_and_cube([4, 8]))
-print(check_square_and_cube([16, 48]))
-print(check_square_and_cube([9, 27]))
+print(check_square_and_cube([4, 8])) # True
+print(check_square_and_cube([16, 48])) # False
+print(check_square_and_cube([9, 27])) # True
