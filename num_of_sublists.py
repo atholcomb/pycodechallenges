@@ -1,21 +1,22 @@
 #!/usr/bin/python3.7
 # written by: atholcomb
-# try.py
+# num_of_sublists.py
 # Return the total number of lists inside a given list.
 
 def num_of_sublists(some_list):
-    result = 0
+    count = 0 
+    
+    if not any(isinstance(i, list) for i in some_list):
+        return 0
+    else:
+        for num in some_list:
+            if num == list(num):
+                count += 1
 
-    for item in some_list:
-        if item == 1 or item == 2 or item == 3:
-            result = 0
-        else:
-            result += 1
-
-    return result
+    return count
 
 
-print(num_of_sublists([[1, 2, 3]]))
-print(num_of_sublists([[1, 2, 3], [1, 2, 3], [1, 2, 3]]))
-print(num_of_sublists([[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]))
-print(num_of_sublists([1, 2, 3]))
+print(num_of_sublists([[1, 2, 3]])) # 1
+print(num_of_sublists([[1, 2, 3], [1, 2, 3], [1, 2, 3]])) # 2
+print(num_of_sublists([[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]])) # 4
+print(num_of_sublists([1, 2, 3])) # 0
