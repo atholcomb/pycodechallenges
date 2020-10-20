@@ -5,15 +5,18 @@
 # If it wasn't clear enough already, you should use recursion in your solution.
 
 def vowels(string):
-    vowels = 'aeiou'
     count = 0
 
-    for vowel in vowels:
-        for item in string:
-            if vowel in item:
-                count += 1
+    # idenitfy the number of vowels within the string, add to count variable
+    for s in string:
+        if s in 'aeiou':
+            count += 1
 
-    return count
+    # if empty string, return "empty string", else return # of vowels in string    
+    if string == "":
+        return f"{string}, Empty string"
+    return f"{string}, {count} vowels"
+
 
 print(vowels("apple"))
 print(vowels("cheesecake"))
