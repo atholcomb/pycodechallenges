@@ -9,7 +9,7 @@ def parse_code(string):
     
     ns = re.sub("[0]", ' ', string)
     new = ns.split()
-    
+
     for item in range(len(new)):
         new_string["first_name"] = new[0]
         new_string["last_name"] = new[1]
