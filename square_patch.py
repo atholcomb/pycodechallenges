@@ -24,7 +24,7 @@ print(square_patch(1))
 print(square_patch(0))
 
 # example output
-#square_patch(3) ➞ [
+#square_patch(3) [
 #  [3, 3, 3],
 #  [3, 3, 3],
 #  [3, 3, 3]
